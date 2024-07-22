@@ -1,14 +1,15 @@
 import Card from "./Card"
 import './Reservation.css'
 export default function Reservation({reservations,cancelReservation}) {
-    const cardReservations = reservations.map(({id, name, date, time, guest}) => {
+    const cardReservations = reservations.map(({id, name, date, time, number}) => {
         return (
             <Card
+            key={id}
             id={id}
             name={name}
             date={date}
             time={time}
-            guest={guest}
+            number={number}
             cancelReservation={cancelReservation}
             />
         )

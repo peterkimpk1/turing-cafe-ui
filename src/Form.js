@@ -11,7 +11,7 @@ export default function Form({addReservation}) {
             name: name,
             date: date,
             time: time,
-            guest: guest,
+            number: guest,
             id: Date.now()
         }
         addReservation(reservation)
