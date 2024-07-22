@@ -1,0 +1,21 @@
+.resy-form {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    
+    button {
+        border: 1px solid white;
+    }
+}
+input,button {
+    width: 13em;
+    height: 1.3em;
+}
+button {
+    height: 2em;
+    background-color: teal;
+    color:white;
+}
+button:hover {
+    cursor: pointer;
+}
