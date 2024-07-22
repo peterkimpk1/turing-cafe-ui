@@ -2,17 +2,20 @@
     display: flex;
     justify-content: space-around;
     width: 100%;
-    input,button {
-        width: 13em;
-        height: 1.3em;
-    }
+    
     button {
-        height: 2em;
-        background-color: teal;
-        color:white;
         border: 1px solid white;
     }
-    button:hover {
-        cursor: pointer;
-    }
+}
+input,button {
+    width: 13em;
+    height: 1.3em;
+}
+button {
+    height: 2em;
+    background-color: teal;
+    color:white;
+}
+button:hover {
+    cursor: pointer;
 }

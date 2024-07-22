@@ -1,0 +1,19 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: white;
+    color: teal;
+    gap: 15px;
+    padding: 10px 25px 10px 25px;
+    border: 5px solid teal;
+    border-radius: 10px;
+    h3 {
+        margin: 0;
+        padding: 0;
+    }
+    p {
+        margin: 0;
+        padding: 0;
+    }
+}
