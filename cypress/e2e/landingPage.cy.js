@@ -10,6 +10,7 @@ describe('landing page spec', () => {
   })
   it('should display all necessary components on load', () => {
     cy.visit('http://localhost:3000')
+    .viewport('macbook-13')
     .get('h1').should('contain.text','Turing Cafe Reservations')
     .get('.resy-form').should('exist')
     .get('.resy-container').should('exist')

@@ -9,6 +9,7 @@ describe('dataInput', () => {
   });
   it('should be able to input in form and the value should show', () => {
     cy.visit('http://localhost:3000')
+    .viewport('macbook-13')
     cy.get('[placeholder="Name"]').type('Turing')
     cy.get('[placeholder="Name"]').should('contain.value','Turing')
     cy.get('[placeholder="Date (mm/dd)"]').type('07/22')
@@ -20,6 +21,7 @@ describe('dataInput', () => {
   })
   it.only('should be able to let user make a reservation', () => {
     cy.visit('http://localhost:3000')
+    .viewport('macbook-13')
     cy.get('[placeholder="Name"]').type('Turing')
     cy.get('[placeholder="Date (mm/dd)"]').type('07/22')
     cy.get('[placeholder="Time"]').type('9:30')
